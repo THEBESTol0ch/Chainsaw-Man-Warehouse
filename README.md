@@ -1,6 +1,7 @@
 ## Chainsaw-Man-Warehouse
 ```
-A fan-made project based on Chainsaw Man with the [«APOLLO» - Corporation] support. The game uses artificial intelligence from that channel - @Y3llow Mustang.
+A fan-made project based on Chainsaw Man with the [«APOLLO» - Corporation] support. 
+The game uses artificial intelligence from that channel - @Y3llow Mustang.
 
 The gameplay is intuitive. All you have to do is just kill zombies in the warehouse.
 
