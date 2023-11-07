@@ -245,9 +245,12 @@ ChainsawStartEvent.OnServerEvent:Connect(function()
 			wait(2.3)
 			ChainsawIdleSound:Play()
 		end
-		local SpawnZombieValue = game.ServerScriptService.Values:FindFirstChild("SpawnZombieValue")
-		if SpawnZombieValue then
-			SpawnZombieValue.Value = true
+		local Values = game.ServerScriptService:FindFirstChild("Values")
+		if Values then
+			local SpawnZombieValue = Values:FindFirstChild("SpawnZombieValue")
+			if SpawnZombieValue then
+				SpawnZombieValue.Value = true
+			end
 		end
 		CanEvent = true
 	end
