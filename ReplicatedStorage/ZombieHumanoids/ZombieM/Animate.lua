@@ -8,7 +8,7 @@ function   waitForChild(parent, childName)
 end
 
 local Figure = script.Parent
-local Humanoid = waitForChild(Figure, "ZombieHumanoid")
+local Humanoid = waitForChild(Figure, "Humanoid")
 local pose = "Standing"
 
 local currentAnim = ""

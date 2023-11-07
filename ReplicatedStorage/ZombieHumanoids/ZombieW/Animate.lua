@@ -8,7 +8,7 @@ function   waitForChild(parent, childName)
 end
 
 local Figure = script.Parent
-local Humanoid = waitForChild(Figure, "ZombieHumanoid")
+local Humanoid = waitForChild(Figure, "Humanoid")
 local pose = "Standing"
 
 local currentAnim = ""
@@ -32,9 +32,7 @@ local animNames = {
 	swim = 	{
 		{ id = "http://www.roblox.com/asset/?id=507784897", weight = 10 } 
 	}, 
-	swimidle = 	{
-		{ id = "http://www.roblox.com/asset/?id=507785072", weight = 10 } 
-	}, 
+
 	jump = 	{
 		{ id = "http://www.roblox.com/asset/?id=507765000", weight = 10 } 
 	}, 

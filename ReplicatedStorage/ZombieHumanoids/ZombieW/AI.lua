@@ -1,4 +1,4 @@
-local myHuman = script.Parent:WaitForChild("ZombieHumanoid")
+local myHuman = script.Parent:WaitForChild("Humanoid")
 local myRoot = script.Parent:WaitForChild("HumanoidRootPart")
 local head = script.Parent:WaitForChild("Head")
 local lowerTorso = script.Parent:WaitForChild("LowerTorso")
@@ -86,7 +86,7 @@ function findTarget()
 	for i,v in ipairs(workspace:GetChildren()) do
 		local human = v:FindFirstChild("Humanoid")
 		local torso = v:FindFirstChild("Torso") or v:FindFirstChild("HumanoidRootPart")
-		if human and torso and v.Name ~= script.Parent.Name then
+		if human and torso and v.Name ~= script.Parent.Name and v.Name ~= "ZombieM" and v.Name ~= "ZombieW" then
 			if (myRoot.Position - torso.Position).magnitude < dist and human.Health > 0 then
 				table.insert(potentialTargets,torso)
 			end

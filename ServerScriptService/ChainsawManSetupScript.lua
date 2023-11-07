@@ -13,28 +13,28 @@ game.Players.PlayerAdded:Connect(function(Player)
 		wait(5)
 		
 		ChainBladeLeftArm.Parent = Character
-		ChainBladeLeftArm.Connector.Weld.Part1 = Character.LeftLowerArm
+		ChainBladeLeftArm.Connector.Weld.Part1 = Character:WaitForChild("LeftLowerArm")
 
 		ChainsawHead.Parent = Character
-		ChainsawHead.Connector.Weld.Part1 = Character.Head
+		ChainsawHead.Connector.Weld.Part1 = Character:WaitForChild("Head")
 
 		ChainBladeRightArm.Parent = Character
-		ChainBladeRightArm.Connector.Weld.Part1 = Character.RightLowerArm
+		ChainBladeRightArm.Connector.Weld.Part1 = Character:WaitForChild("RightLowerArm")
 
 		WireConnector.Parent = Character
-		WireConnector.Weld.Part1 = Character.UpperTorso
+		WireConnector.Weld.Part1 = Character:WaitForChild("UpperTorso")
 		
 		Starter.Parent = Character
 		
 		StarterConnector1.Parent = Character
 		StarterConnector2.Parent = Character
-		StarterConnector1.Weld.Part1 = Character.UpperTorso
-		StarterConnector2.Weld.Part1 = Character.LeftHand
+		StarterConnector1.Weld.Part1 = Character:WaitForChild("UpperTorso")
+		StarterConnector2.Weld.Part1 = Character:WaitForChild("LeftHand")
 
 		ChainsawManGui.Parent = Player.PlayerGui
 
-		Weld.Parent = Character.HumanoidRootPart
-		Weld.Part0 = Character.HumanoidRootPart
+		Weld.Parent = Character:WaitForChild("HumanoidRootPart")
+		Weld.Part0 = Character:WaitForChild("HumanoidRootPart")
 
 		Starter.Transparency = 0
 		StarterConnector1.RopeConstraint.Visible = false
