@@ -193,17 +193,17 @@ function HideChainsaw()
 end
 
 function BladeTouch(Hit)
+	if ChainsawEngineStatusValue.Value == true then
+		if ChainsawAccelerationSound.IsPlaying == false then AccelerationValue.Value = AccelerationValue.Value + 5 end
+		DoItem("BloodEffect1", "Enabled", true)
+		DoItem("BloodEffect2", "Enabled", true)
+		wait(1)
+		DoItem("BloodEffect1", "Enabled", false)
+		DoItem("BloodEffect2", "Enabled", false)
+	end
 	if CanKill == true then
 		Hit.Parent.Humanoid:TakeDamage(100)
 		SFXEmitter.AttackBladeSounds["ChainsawAttack"..math.random(1, #SFXEmitter.AttackBladeSounds:GetChildren()).."BladeSound"]:Play()
-		if ChainsawEngineStatusValue.Value == true then
-			if ChainsawAccelerationSound.IsPlaying == false then AccelerationValue.Value = AccelerationValue.Value + 5 end
-			DoItem("BloodEffect1", "Enabled", true)
-			DoItem("BloodEffect2", "Enabled", true)
-			wait(1)
-			DoItem("BloodEffect1", "Enabled", false)
-			DoItem("BloodEffect2", "Enabled", false)
-		end
 	end
 end
 --
